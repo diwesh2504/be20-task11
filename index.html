@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Task</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+    <div class="display-3" style="text-align: center;">Number Trivia API</div>
+    <div class="container-fluid" style="margin-top: 10px;">
+        <div class="row">
+            <div class="col-4">
+                <input type="text" class="form-control" id="num" placeholder="Enter a number for trivia">
+                <button class="btn btn-success" style="margin-top: 2px;" onclick="getTrivia()">Search</button>
+                <p><em>Enter a number and search for interesting facts related to it.</em></p>
+                <p class="display-6 text-center">OR</p>
+                <input type="text" class="form-control" id="date" placeholder="Enter a date(mm/dd) for trivia">
+                <button class="btn btn-success" style="margin-top: 2px;" onclick="getDate()">Search</button>
+                <p><em>Enter date and month and search for interesting facts related to it.</em></p>
+            </div>
+            <div class="col-4">
+                <h6>Trivia:</h6>
+                <p id="trivia"></p>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
